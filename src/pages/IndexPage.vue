@@ -27,6 +27,16 @@
         </q-item>
       </q-list>
     </q-card>
+    <div class="col-xs-3">
+      <q-toolbar class="bg-primary">
+        <q-btn
+          fab
+          class="q-ml-lg"
+          color="secondary"
+          style="margin-bottom: -42px"
+          icon="mdi-plus"/>
+      </q-toolbar>
+    </div>
   </q-page>
 </template>
 

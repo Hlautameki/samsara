@@ -16,13 +16,15 @@
       <q-list bordered>
         <q-item>
           <q-item-section side>
-            <q-checkbox :model-value="true"/>
+            <q-checkbox :model-value="true" />
           </q-item-section>
-          <q-item-section>
-            Go shopping
-          </q-item-section>
+          <q-item-section> Go shopping </q-item-section>
           <q-item-section side>
-            <q-btn flat round size="sm" icon="mdi-delete"/>
+            <q-btn
+              flat
+              round
+              size="sm"
+              icon="mdi-delete" />
           </q-item-section>
         </q-item>
       </q-list>
@@ -37,8 +39,8 @@ export default defineComponent({
   name: 'IndexPage',
   data() {
     return {
-      search: ''
+      search: '',
     }
-  }
+  },
 })
 </script>

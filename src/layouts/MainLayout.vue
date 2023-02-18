@@ -43,10 +43,13 @@
         </q-item>
         <q-item clickable>
           <q-item-section side>
-            <q-icon name="mdi-shopping" />
+            <q-icon
+              color="red-16"
+              name="mdi-shopping"
+            />
           </q-item-section>
-          <q-item-section> Shopping list</q-item-section>
-          <q-item-section side> 21</q-item-section>
+          <q-item-section class="grey-9"> Shopping list</q-item-section>
+          <q-item-section side> 12</q-item-section>
         </q-item>
       </q-list>
     </q-drawer>

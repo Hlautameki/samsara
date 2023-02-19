@@ -12,12 +12,6 @@
         />
 
         <q-toolbar-title> Quasar App</q-toolbar-title>
-
-        <q-btn
-          icon="mdi-logout"
-          flat
-          round
-        />
       </q-toolbar>
     </q-header>
 
@@ -33,7 +27,7 @@
         <q-item class="bg-grey-3">
           <q-item-section> Lists</q-item-section>
           <q-item-section side>
-            <q-btn
+            <CreateTodoListButton
               icon="mdi-plus"
               flat
               round
@@ -41,16 +35,7 @@
             />
           </q-item-section>
         </q-item>
-        <q-item clickable>
-          <q-item-section side>
-            <q-icon
-              color="red-16"
-              name="mdi-shopping"
-            />
-          </q-item-section>
-          <q-item-section class="grey-9"> Shopping list</q-item-section>
-          <q-item-section side> 12</q-item-section>
-        </q-item>
+        <TodoListsList />
       </q-list>
     </q-drawer>
 
@@ -62,11 +47,13 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
+import CreateTodoListButton from 'components/CreateTodoListButton.vue'
+import TodoListsList from 'components/TodoListsList.vue'
 
 export default defineComponent({
   name: 'MainLayout',
 
-  components: {},
+  components: { TodoListsList, CreateTodoListButton },
 
   setup() {
     const leftDrawerOpen = ref(false)
